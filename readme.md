@@ -1,26 +1,14 @@
-# Git Commands
+# Personal website
 
-git init - Create a new git repo
-git status - View the changes to your project code
-git add - Add files to staging area
-git commit - Create a new commit with files from staging area
-git log - View recent commits
-git remote add origin git@github.com:repo-ssh-url.git - Adds a remote connection to name github repository
-git remote -v - Displays verbose external remote repositories
-git push -u origin master - Pushes the code from the master branch up to the origin remote repository (-u flag only need for initial push)
+Created with React and Webpack, this is the code used to generate my website. I used Heroku to deploy the code and point it to a domain I own. You can visit the site [here](http://www.caseycorder.com).
 
 ---
 
-# Setting up SSH for GitHub
+# TODO
 
-1. Generate ssh key (per computer)
-   $ ssh-keygen -t rsa -b 4096 -C "ccorder2@gmail.com"
-2. Run ssh agent
-   $ eval "$(ssh-agent -s)"
-3. Add ssh key to agent
-   $ ssh-add ~/.ssh/id_rsa
-4. Copy contents of rsa to clipboard
-   $ clip < ~/.ssh/id_rsa.pub
-5. Paste public key to new github RSA key
-6. Make connection to github server via ssh
-   $ ssh -T git@github.com
+* Fix rendering time for images. They appear to be slow to load, may need to shrink the images or handle rendering them before showing the application.
+* Add Resume download to the About page.
+* Add more content About page and for each application under the Portfolio page.
+* Create first blog and style the page.
+* Research and implement transitions where tasteful.
+* Come up with a better header style.
