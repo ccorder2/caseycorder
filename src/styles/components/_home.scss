@@ -1,13 +1,12 @@
 .home__blurb {
 	align-items: center;
-	background: radial-gradient(rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5)),
-		url('/images/sunrise_dark.jpg');
+	background: url('/images/sunrise_dark.jpg');
 	background-size: cover;
 	background-position: center;
 	color: $off-white;
 	display: flex;
 	flex-direction: column;
-	height: 80vh;
+	height: 90vh;
 	padding: 4em 0;
 	width: 100vw;
 	& > div {
