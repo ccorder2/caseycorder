@@ -1,0 +1,35 @@
+.footer {
+	background: #c3c3c3;
+	padding: 1em;
+	margin-top: auto;
+}
+
+.footer__content {
+	align-content: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__email {
+	display: flex;
+	& > a {
+		align-self: center;
+		color: #080808;
+		font-weight: 300;
+	}
+	& > span {
+		align-self: center;
+		color: #080808;
+		font-weight: 100;
+	}
+}
+
+.footer__social {
+	display: flex;
+	& > a {
+		display: block;
+		height: 32px;
+		margin: 0.5em;
+		width: 32px;
+	}
+}

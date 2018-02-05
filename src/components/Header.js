@@ -1,25 +1,38 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
-import { startLogout } from '../actions/auth';
+import NavButton from './NavButton';
+import Navigation from './Navigation';
 
-export const Header = ({ startLogout }) => (
-	<header className="header">
-		<div className="content-container">
-			<div className="header__content">
-				<Link className="header__title" to="/dashboard">
-					<h1>React App Boilerplate</h1>
-				</Link>
-				<button className="btn btn--link" onClick={startLogout}>
-					Logout
-				</button>
-			</div>
-		</div>
-	</header>
-);
+export class Header extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			open: false
+		};
+	}
+	onClick = () => {
+		this.setState({ open: !this.state.open });
+	};
 
-const mapDispatchToProps = dispatch => ({
-	startLogout: () => dispatch(startLogout())
-});
+	render() {
+		return (
+			<header className="header">
+				<div className="content-container">
+					<div className="header__content">
+						<Link to="/" className="header__logo">
+							<div>
+								<span>C</span>
+								<span>/</span>
+								<span>C</span>
+							</div>
+						</Link>
+						<NavButton open={this.state.open} onClick={this.onClick} />
+						<Navigation show={this.state.open} />
+					</div>
+				</div>
+			</header>
+		);
+	}
+}
 
-export default connect(undefined, mapDispatchToProps)(Header);
+export default Header;
