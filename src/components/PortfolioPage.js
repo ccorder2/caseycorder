@@ -25,11 +25,11 @@ export class PortfolioPage extends React.Component {
 						<div className="portfolio__item">
 							Unfortunately, I am unable to showcase any of the solftware
 							solutions I've worked on. This section is more to demo small
-							projects I've created in my spare time. This past couple of
-							months, I've started learning React, Redux, and Webpack. Thus, the
-							following three apps were made using that technology. I'm always
-							open to questions, criticisms, and input. So if you have any,
-							please share.
+							projects I've created in my spare time. These past couple of
+							months, I've started learning Firebase, React, Redux, and Webpack.
+							Thus, the following three apps were made using those technologies.
+							I'm always open to questions, criticisms, and input. So if you
+							have any, please share.
 						</div>
 					</div>
 					<hr />
@@ -43,7 +43,7 @@ export class PortfolioPage extends React.Component {
 									<strong>Indecision:</strong>
 								</span>
 								{'  '}
-								A small todo style list that allows the user to create items or
+								A small todo-style list that allows the user to create items or
 								remove them. If the user is undecided on what to do, the
 								application has a button, that when pressed, will popup a random
 								item in the list.
@@ -92,7 +92,7 @@ export class PortfolioPage extends React.Component {
 								<span>
 									<strong>Planning Poker:</strong>
 								</span>{' '}
-								A tool to for estimating work items for agile software
+								A tool used to estimate stories for agile/scrum software
 								development.
 								<br />
 								<a
