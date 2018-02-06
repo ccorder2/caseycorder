@@ -1,12 +1,25 @@
 import React from 'react';
 
 export class PortfolioPage extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			showText: false
+		};
+	}
+	componentDidMount() {
+		setTimeout(() => {
+			this.setState({ showText: true });
+		}, 1000);
+	}
 	render() {
 		return (
 			<div>
 				<div className="portfolio__content">
 					<div className="portfolio__blurb">
-						<div>Play. Learn. Adapt.</div>
+						<div className={this.state.showText ? 'show' : ''}>
+							Play. Learn. Adapt.
+						</div>
 					</div>
 					<div className="content-container">
 						<div className="portfolio__item">

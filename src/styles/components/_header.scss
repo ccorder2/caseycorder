@@ -1,5 +1,12 @@
 .header {
-	background: #d3d3d3;
+	background: #111111;
+	flex-grow: 0;
+	margin-bottom: 0em;
+	z-index: 999;
+	@media (min-width: $tablet-breakpoint) {
+		background: transparent;
+		margin-bottom: -5.15em;
+	}
 }
 
 .header__content {
@@ -11,27 +18,18 @@
 
 .header__logo {
 	align-items: baseline;
-	color: #080808;
+	color: $off-white;
 	display: flex;
-	font-family: 'Dancing Script', 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	text-decoration: none;
 	& > div {
-		border: 3px solid #080808;
 		border-radius: 0.25em;
 		font-size: 1.2em;
-		font-weight: 300;
+		font-weight: 400;
 		letter-spacing: -0.05em;
 		padding: 0em 0.3em 0em 0.25em;
 		user-select: none;
 		-webkit-user-select: none;
-		& > span:nth-child(1) {
-			position: relative;
-			top: -0.2em;
-		}
-		& > span:nth-child(3) {
-			position: relative;
-			top: 0.2em;
-		}
 		@media (min-width: $tablet-breakpoint) {
 			font-size: 1.8em;
 		}
@@ -45,9 +43,13 @@
 	display: flex;
 	flex-basis: auto;
 	flex-direction: row;
+	font-weight: 300;
 	overflow: hidden;
 	transition: max-height 0.25s ease-in;
 	-webkit-transition: max-height 0.25s ease-in;
+	&:hover .header__nav-link {
+		color: #999999;
+	}
 	&.show {
 		max-height: 50em;
 	}
@@ -68,7 +70,7 @@
 	position: relative;
 	width: 1.8em;
 	& span {
-		background: #080808;
+		background: $off-white;
 		border-radius: 0.3em;
 		display: block;
 		height: 0.25em;
@@ -109,20 +111,16 @@
 
 .header__nav-link {
 	background: transparent;
-	color: #080808;
+	color: $off-white;
 	height: auto;
 	padding: 1em;
 	text-decoration: none;
 	width: 100%;
 	&:hover {
-		background: #eeeeee;
+		color: $off-white !important;
 	}
 	&.active {
-		background: linear-gradient(
-				rgba(255, 255, 255, 0.5),
-				rgba(255, 255, 255, 0.5)
-			),
-			#333333;
+		color: #999999;
 	}
 	@media (min-width: $tablet-breakpoint) {
 		padding: 1.5em;

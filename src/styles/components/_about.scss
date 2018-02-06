@@ -1,14 +1,19 @@
 .about {
-	padding: 4em 0em;
+	background-color: #333333;
+	flex-grow: 1;
 }
 
 .about__greeting-content {
 	align-items: center;
+	color: $off-white;
 	display: flex;
 	flex-direction: column-reverse;
+	flex-grow: 1;
 	font-size: 1.4em;
+	font-weight: 300;
+	height: 100%;
+	padding: 7em 0em 3em 0em;
 	@media (min-width: $tablet-breakpoint) {
-		align-items: unset;
 		flex-direction: row;
 	}
 }
@@ -18,7 +23,7 @@
 	background-position-x: -3.5em;
 	background-size: cover;
 	border-radius: 50%;
-	margin-bottom: 2em;
+	margin: 0em 0em 1em 0em;
 	max-height: 10em;
 	max-width: 10em;
 	min-height: 10em;
@@ -28,6 +33,7 @@
 	}
 	@media (min-width: $desktop-breakpoint) {
 		background-position-x: -5em;
+		margin: 0em 0em 0em 1em;
 		max-height: 15em;
 		max-width: 15em;
 		min-height: 15em;

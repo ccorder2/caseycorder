@@ -10,9 +10,16 @@
 	padding: 4em 0;
 	width: 100vw;
 	& > div {
+		opacity: 0;
+		transition: opacity 0.5s ease-in;
+		-webkit-transition: opacity 0.5s ease-in;
+		&.show {
+			opacity: 1;
+		}
 		&:nth-child(1) {
 			font-size: 2.5em;
 			font-weight: 100;
+			margin-top: 1em;
 			@media (min-width: $tablet-breakpoint) {
 				font-size: 4em;
 			}
@@ -35,12 +42,7 @@
 			}
 		}
 	}
-}
-
-.home__greeting {
-	font-size: 1.4em;
-	padding: 4em 0em;
-	& > div > span {
-		font-size: 1.45em;
+	@media (min-width: $tablet-breakpoint) {
+		height: 100vh;
 	}
 }

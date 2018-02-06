@@ -20,11 +20,7 @@ export class Header extends React.Component {
 				<div className="content-container">
 					<div className="header__content">
 						<Link to="/" className="header__logo">
-							<div>
-								<span>C</span>
-								<span>/</span>
-								<span>C</span>
-							</div>
+							<div>Casey Corder</div>
 						</Link>
 						<NavButton open={this.state.open} onClick={this.onClick} />
 						<Navigation show={this.state.open} />
