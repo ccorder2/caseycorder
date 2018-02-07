@@ -24,7 +24,7 @@ export class HomePage extends React.Component {
 	}
 	handleScroll = () => {
 		if (
-			document.getElementById('portfolio').offsetTop <=
+			document.getElementById('portfolio').offsetTop - 20 <=
 			document.documentElement.scrollTop
 		) {
 			this.setState({ showPortoflio: true });

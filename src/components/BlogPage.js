@@ -5,6 +5,7 @@ export class BlogPage extends React.Component {
 		return (
 			<div className="blog">
 				<div className="content-container">
+					<div className="blog__title">BLOG</div>
 					<div className="blog__content">Comming soon...</div>
 				</div>
 			</div>

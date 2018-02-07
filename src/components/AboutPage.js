@@ -5,6 +5,7 @@ export class AboutPage extends React.Component {
 		return (
 			<div className="about">
 				<div className="content-container">
+					<div className="about__title">ABOUT</div>
 					<div className="about__greeting-content">
 						<div className="about__greeting">
 							<span>Greetings</span>, I'm Casey Corder--full stack Microsoft

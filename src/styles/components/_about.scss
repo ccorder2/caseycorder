@@ -12,11 +12,11 @@
 	font-size: 1.2em;
 	font-weight: 300;
 	height: 100%;
-	padding: 2em 0em 2em 0em;
+	padding: 2em 0em;
 	@media (min-width: $tablet-breakpoint) {
 		flex-direction: row;
 		font-size: 1.4em;
-		padding: 7em 0em 3em 0em;
+		padding: 3em 0em;
 	}
 }
 
@@ -41,4 +41,9 @@
 		min-height: 15em;
 		min-width: 15em;
 	}
+}
+.about__title {
+	color: $off-white;
+	font-size: 1.8em;
+	font-weight: 100;
 }

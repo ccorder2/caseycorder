@@ -47,10 +47,7 @@
 	@media (min-width: $tablet-breakpoint) {
 		flex-direction: row;
 		font-size: 1.4em;
-	}
-	@media (min-width: $desktop-breakpoint) {
-		flex-direction: row;
-		font-size: 1.7em;
+		margin: 3em 0em;
 	}
 }
 
@@ -59,4 +56,9 @@
 	& > span {
 		font-size: 1.3em;
 	}
+}
+
+.portfolio__title {
+	font-size: 1.8em;
+	font-weight: 100;
 }

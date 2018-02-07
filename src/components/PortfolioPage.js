@@ -11,6 +11,9 @@ export class PortfolioPage extends React.Component {
 						</div>
 					</div>
 					<div className="content-container">
+						<div className="portfolio__title">PORTFOLIO</div>
+					</div>
+					<div className="content-container">
 						<div className="portfolio__item">
 							Unfortunately, I am unable to showcase any of the solftware
 							solutions I've worked on. This section is more to demo small
@@ -57,7 +60,11 @@ export class PortfolioPage extends React.Component {
 									<strong>Expensify:</strong>
 								</span>
 								{'  '}
-								Get your expenses in order.
+								Get your expenses in order. After logging in with a Google
+								account, you have the ability to add, edit, and delete expenses.
+								The landing page displays a list of expenses that can be
+								filtered and sorted on. Clearing the filters allows you to see
+								all expenses.
 								<br />
 								<a
 									href="https://github.com/ccorder2/expensify-app"
