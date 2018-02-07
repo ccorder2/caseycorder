@@ -15,8 +15,8 @@
 		font-size: 2.4em;
 		font-weight: 100;
 		opacity: 0;
-		transition: opacity 1s ease-in;
-		-webkit-transition: opacity 1s ease-in;
+		transition: opacity 0.5s ease-in;
+		-webkit-transition: opacity 0.5s ease-in;
 		&.show {
 			opacity: 1;
 		}

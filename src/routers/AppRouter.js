@@ -18,6 +18,10 @@ export const hashLinkScroll = () => {
 			const id = hash.replace('#', '');
 			const element = document.getElementById(id);
 			if (element) element.scrollIntoView();
+		}, 100);
+	} else {
+		setTimeout(() => {
+			document.documentElement.scrollTo(0, 0);
 		}, 0);
 	}
 };
