@@ -1,31 +1,31 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class Navigation extends React.Component {
 	render() {
 		return (
 			<div className={this.props.show ? 'header__nav show' : 'header__nav'}>
-				<NavLink
-					to="/about"
+				<Link
+					to="/#about"
 					className="header__nav-link"
-					activeClassName="active"
+					onClick={this.props.onClick}
 				>
 					About
-				</NavLink>
-				<NavLink
-					to="/portfolio"
+				</Link>
+				<Link
+					to="/#portfolio"
 					className="header__nav-link"
-					activeClassName="active"
+					onClick={this.props.onClick}
 				>
 					Portfolio
-				</NavLink>
-				<NavLink
-					to="/blog"
+				</Link>
+				<Link
+					to="/#blog"
 					className="header__nav-link"
-					activeClassName="active"
+					onClick={this.props.onClick}
 				>
 					Blog
-				</NavLink>
+				</Link>
 			</div>
 		);
 	}

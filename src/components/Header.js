@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import NavButton from './NavButton';
 import Navigation from './Navigation';
 
@@ -19,11 +19,11 @@ export class Header extends React.Component {
 			<header className="header">
 				<div className="content-container">
 					<div className="header__content">
-						<Link to="/" className="header__logo">
+						<NavLink to="/" className="header__logo">
 							<div>Casey Corder</div>
-						</Link>
+						</NavLink>
 						<NavButton open={this.state.open} onClick={this.onClick} />
-						<Navigation show={this.state.open} />
+						<Navigation show={this.state.open} onClick={this.onClick} />
 					</div>
 				</div>
 			</header>

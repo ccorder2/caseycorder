@@ -11,15 +11,26 @@ import PortfolioPage from '../components/PortfolioPage';
 
 export const history = createHistory();
 
+export const hashLinkScroll = () => {
+	const { hash } = window.location;
+	if (hash !== '') {
+		setTimeout(() => {
+			const id = hash.replace('#', '');
+			const element = document.getElementById(id);
+			if (element) element.scrollIntoView();
+		}, 0);
+	}
+};
+
+history.listen(location => {
+	hashLinkScroll();
+});
+
 const AppRouter = () => (
 	<Router history={history}>
 		<div>
 			<Switch>
 				<Route path="/" component={withLayout(HomePage)} exact={true} />
-				<Route path="/about" component={withLayout(AboutPage)} />
-				<Route path="/portfolio" component={withLayout(PortfolioPage)} />
-				<Route path="/blog" component={withLayout(BlogPage)} />
-				<Route path="/contact" component={withLayout(ContactPage)} />
 				<Route component={NotFoundPage} />
 			</Switch>
 		</div>
