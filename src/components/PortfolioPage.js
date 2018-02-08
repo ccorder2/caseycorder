@@ -46,6 +46,7 @@ export class PortfolioPage extends React.Component {
 								item in the list.
 								<br />
 								<a
+									className="link"
 									href="https://github.com/ccorder2/indecision-app"
 									target="_blank"
 								>
@@ -72,6 +73,7 @@ export class PortfolioPage extends React.Component {
 								all expenses.
 								<br />
 								<a
+									className="link"
 									href="https://github.com/ccorder2/expensify-app"
 									target="_blank"
 								>
@@ -97,6 +99,7 @@ export class PortfolioPage extends React.Component {
 								development.
 								<br />
 								<a
+									className="link"
 									href="https://github.com/ccorder2/planning-poker"
 									target="_blank"
 								>
