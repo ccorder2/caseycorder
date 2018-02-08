@@ -14,12 +14,6 @@
 	& > div {
 		font-size: 2.4em;
 		font-weight: 100;
-		opacity: 0;
-		transition: opacity 0.5s ease-in;
-		-webkit-transition: opacity 0.5s ease-in;
-		&.show {
-			opacity: 1;
-		}
 		@media (min-width: $tablet-breakpoint) {
 			font-size: 3em;
 		}

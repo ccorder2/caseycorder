@@ -1,4 +1,5 @@
 import React from 'react';
+import { Fade } from './Transitions';
 
 export class PortfolioPage extends React.Component {
 	render() {
@@ -6,9 +7,13 @@ export class PortfolioPage extends React.Component {
 			<div>
 				<div className="portfolio__content">
 					<div className="portfolio__blurb">
-						<div className={this.props.show ? 'show' : ''}>
-							Play. Learn. Adapt.
-						</div>
+						{this.props.show ? (
+							<Fade key="portfolio-title" in appear={true}>
+								<div>Play. Learn. Adapt.</div>
+							</Fade>
+						) : (
+							''
+						)}
 					</div>
 					<div className="content-container">
 						<div className="portfolio__title">PORTFOLIO</div>

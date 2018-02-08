@@ -3,28 +3,27 @@ import { hashLinkScroll } from '../routers/AppRouter';
 import AboutPage from './AboutPage';
 import BlogPage from './BlogPage';
 import PortfolioPage from './PortfolioPage';
+import { Fade } from './Transitions';
 
 export class HomePage extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			showTitle: false,
 			showPortoflio: false
 		};
 	}
 	componentDidMount() {
 		window.addEventListener('scroll', this.handleScroll);
 		hashLinkScroll();
-		setTimeout(() => {
-			this.setState({ showTitle: true });
-		}, 500);
 	}
 	componentWillUnmount() {
 		window.removeEventListener('scroll', this.handleScroll);
 	}
 	handleScroll = () => {
 		if (
-			document.getElementById('portfolio').offsetTop - 20 <=
+			document.getElementById('portfolio').offsetTop -
+				window.innerHeight / 2 +
+				20 <=
 			document.documentElement.scrollTop
 		) {
 			this.setState({ showPortoflio: true });
@@ -35,13 +34,15 @@ export class HomePage extends React.Component {
 		return (
 			<div>
 				<div className="home__blurb">
-					<div className={this.state.showTitle ? 'show' : ''}>Casey Corder</div>
-					<div className={this.state.showTitle ? 'show' : ''}>
-						Software Developer
-					</div>
-					<div className={this.state.showTitle ? 'show' : ''}>
-						Coding one line at a time...
-					</div>
+					<Fade key="blurb-title" in appear={true}>
+						<div>Casey Corder</div>
+					</Fade>
+					<Fade key="blurb-subtitle" in appear={true}>
+						<div>Software Developer</div>
+					</Fade>
+					<Fade key="blurb-text" in appear={true}>
+						<div>Coding one line at a time...</div>
+					</Fade>
 				</div>
 				<div id="about">
 					<AboutPage />
