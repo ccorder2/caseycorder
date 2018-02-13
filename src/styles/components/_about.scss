@@ -25,6 +25,7 @@
 	background-position-x: -3.5em;
 	background-size: cover;
 	border-radius: 50%;
+	box-shadow: 0.2em 0.4em 0.8em rgba(0, 0, 0, 0.5);
 	margin: 0em 0em 1.5em 0em;
 	max-height: 10em;
 	max-width: 10em;
@@ -45,5 +46,5 @@
 .about__title {
 	color: $off-white;
 	font-size: 1.8em;
-	font-weight: 100;
+	font-weight: 400;
 }

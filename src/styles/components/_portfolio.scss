@@ -37,6 +37,10 @@
 		max-width: 10em;
 		min-height: 10em;
 		min-width: 10em;
+		transition: all 0.2s linear;
+		&:hover {
+			box-shadow: none;
+		}
 	}
 	@media (min-width: $tablet-breakpoint) {
 		flex-direction: row;
@@ -45,14 +49,25 @@
 	}
 }
 
+.portfolio__item-col {
+	@extend .portfolio__item;
+	align-items: flex-start;
+	margin: 1em 0em;
+	@media (min-width: $tablet-breakpoint) {
+		flex-direction: column;
+		font-size: 1.4em;
+		margin: 2em 0em;
+	}
+}
+
 .portfolio__item-content {
 	line-height: 1.7em;
 	& > span {
-		font-size: 1.3em;
+		font-size: 1.1em;
 	}
 }
 
 .portfolio__title {
 	font-size: 1.8em;
-	font-weight: 100;
+	font-weight: 400;
 }

@@ -30,6 +30,9 @@
 		padding: 0em 0.3em 0em 0.25em;
 		user-select: none;
 		-webkit-user-select: none;
+		& span {
+			font-size: 0.8em;
+		}
 		@media (min-width: $tablet-breakpoint) {
 			font-size: 1.8em;
 		}

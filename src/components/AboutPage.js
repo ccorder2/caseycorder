@@ -11,7 +11,13 @@ export class AboutPage extends React.Component {
 							<span>Greetings</span>, I'm Casey Corder--full stack Microsoft
 							developer currently based out of Morgantown, WV. In the spring of
 							2011 I graduated with a BS in Mathematics and a BS in Computer
-							Science from West Virginia University.<br />Resume:{' '}
+							Science from West Virginia University. I've worked as an intern
+							for ANSYS and KeyLogic Systems. After graduating, my internship at
+							KeyLogic turned into a fulltime position. I've continued as a
+							developer only leaving the company briefly to travel. During my
+							travels, they allowed me to work remotely, and after returning, I
+							was hired back on.
+							<br />Resume:{' '}
 							<a
 								className="link"
 								href="/content/SDE_Resume.docx"

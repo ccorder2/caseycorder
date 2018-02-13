@@ -35,9 +35,6 @@ export class HomePage extends React.Component {
 			<div>
 				<div className="home__blurb">
 					<Fade key="blurb-title" in appear={true}>
-						<div>Casey Corder</div>
-					</Fade>
-					<Fade key="blurb-subtitle" in appear={true}>
 						<div>Software Developer</div>
 					</Fade>
 					<Fade key="blurb-text" in appear={true}>

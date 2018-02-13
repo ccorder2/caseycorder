@@ -19,14 +19,60 @@ export class PortfolioPage extends React.Component {
 						<div className="portfolio__title">PORTFOLIO</div>
 					</div>
 					<div className="content-container">
-						<div className="portfolio__item">
-							Unfortunately, I am unable to showcase any of the solftware
-							solutions I've worked on. This section is more to demo small
-							projects I've created in my spare time. These past couple of
-							months, I've started learning Firebase, React, Redux, and Webpack.
-							Thus, the following three apps were made using those technologies.
-							I'm always open to questions, criticisms, and input. So if you
-							have any, please share.
+						<div className="portfolio__item-col">
+							<br />
+							This section is to help demonstrate the drive I have to improve my
+							craft, in addition to exposing some of my personal coding habits.
+							One of the bigger issues I've come across when trying to create
+							this section is the fact that all codesets I've worked on reside
+							on a private server, and all applications are accessed via an
+							organization-wide intranet. That being the case, I am unable to
+							showcase things I've worked on professionally. So, to try to round
+							out this part of my site, I've included a quick rundown of the
+							work I do on a day-to-day basis, immediately followed by some
+							small projects I've created in my spare time.
+						</div>
+					</div>
+					<div className="content-container">
+						<div className="portfolio__item-col">
+							<span>
+								<h4>Professional Experience</h4>
+							</span>
+							My daily routine consists of a fair amount of both front-end and
+							back-end development. As part of the back-end, I regularly code in
+							SQL, PL/SQL, and C#. Many times I've been tasked to help develop
+							and design relational database architectures using both SQL and
+							Oracle. I regularly implement views, functions, and stored
+							procedures, and on occasions, use Entity Framework to generate
+							object-relational mapping. As far as my C# experience, it can be
+							summarized as the reinforcing business rules through roles, data
+							integrity, CRUD operations, and authentication.
+							<br />
+							<br />
+							Originally starting out by learning WebForms, I helped the company
+							move towards the MVC architectural pattern for our web
+							applications by developing the first solution under our contract
+							to use the ASP.NET MVC framework. Since then, many of our existing
+							applications have been refactored from WebForms to MVC. To help
+							with user experience, we use a third-party set of .NET controls by
+							DevExpress alongside of jQuery.
+						</div>
+					</div>
+					<div className="content-container">
+						<div className="portfolio__item-col">
+							<span>
+								<h4>Personal Applications</h4>
+							</span>
+							My experience and fondness with jQuery led me to dive into the
+							world of JavaScript. Recently, I've been taking a stab at learning
+							React and sharpening my JavaScript skills. The following three
+							applications were created using a combination of Firebase, React,
+							Redux, and Webpack. If you would like to visit a working example
+							of any of the them, simply press the image. I've only been looking
+							into React the past few months, so if you have questions,
+							critisms, or input, please feel free to share. Thanks.
+							<br />
+							<br />
 						</div>
 					</div>
 					<hr />
@@ -95,8 +141,9 @@ export class PortfolioPage extends React.Component {
 								<span>
 									<strong>Planning Poker:</strong>
 								</span>{' '}
-								A tool used to estimate stories for agile/scrum software
-								development.
+								A staple for many in the agile development lifecycle is planning
+								poker. A game/tool used to help find consensus when estimating
+								stories to help plan upcoming work.
 								<br />
 								<a
 									className="link"
