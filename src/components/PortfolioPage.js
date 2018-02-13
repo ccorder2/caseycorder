@@ -28,9 +28,9 @@ export class PortfolioPage extends React.Component {
 							on a private server, and all applications are accessed via an
 							organization-wide intranet. That being the case, I am unable to
 							showcase things I've worked on professionally. So, to try to round
-							out this part of my site, I've included a quick rundown of the
-							work I do on a day-to-day basis, immediately followed by some
-							small projects I've created in my spare time.
+							out my portfolio, I've included a quick rundown of the work I do,
+							immediately followed by some small projects I've created in my
+							spare time.
 						</div>
 					</div>
 					<div className="content-container">
@@ -45,8 +45,8 @@ export class PortfolioPage extends React.Component {
 							Oracle. I regularly implement views, functions, and stored
 							procedures, and on occasions, use Entity Framework to generate
 							object-relational mapping. As far as my C# experience, it can be
-							summarized as the reinforcing business rules through roles, data
-							integrity, CRUD operations, and authentication.
+							summarized as the reinforcing of business rules through roles,
+							data integrity, CRUD operations, and authentication.
 							<br />
 							<br />
 							Originally starting out by learning WebForms, I helped the company
