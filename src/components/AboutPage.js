@@ -10,14 +10,22 @@ export class AboutPage extends React.Component {
 						<div className="about__greeting">
 							<span>Greetings</span>, I'm Casey Corder--full stack Microsoft
 							developer currently based out of Morgantown, WV. In the spring of
-							2011 I graduated with a BS in Mathematics and a BS in Computer
-							Science from West Virginia University. I've worked as an intern
-							for ANSYS and KeyLogic Systems. After graduating, my internship at
-							KeyLogic turned into a fulltime position. I've continued as a
-							developer only leaving the company briefly to travel. During my
-							travels, they allowed me to work remotely, and after returning, I
-							was hired back on.
-							<br />Resume:{' '}
+							2011 I graduated with two B.S. degrees, one in Mathematics and the
+							other in Computer Science. In addition to my degree work, I
+							interned for ANSYS and KeyLogic Systems. My positive impact on
+							KeyLogic was recognized and my internship transitioned into a full
+							time position after graduation. I’ve continued as a developer
+							working on many web applications, only leaving the company briefly
+							to move to Seattle and travel. Shortly after departing, I was
+							contacted and asked to continue working part time remotely on
+							previous projects. I lived in Seattle for a couple years before
+							returning to West Virginia, where I was quickly hired back as a
+							full time software developer. I’m a highly motivated and astute
+							individual with over seven years of software development
+							experience, ready to take on any challenge.
+							<br />
+							<br />
+							<strong>Resume:</strong>{' '}
 							<a
 								className="link"
 								href="/content/SDE_Resume.docx"

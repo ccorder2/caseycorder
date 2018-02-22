@@ -21,16 +21,11 @@ export class PortfolioPage extends React.Component {
 					<div className="content-container">
 						<div className="portfolio__item-col">
 							<br />
-							This section is to help demonstrate the drive I have to improve my
-							craft, in addition to exposing some of my personal coding habits.
-							One of the bigger issues I've come across when trying to create
-							this section is the fact that all codesets I've worked on reside
-							on a private server, and all applications are accessed via an
-							organization-wide intranet. That being the case, I am unable to
-							showcase things I've worked on professionally. So, to try to round
-							out my portfolio, I've included a quick rundown of the work I do,
-							immediately followed by some small projects I've created in my
-							spare time.
+							<em>
+								Below are two separate sections. The first is an outline of my
+								professional work experience. And the second, a list of personal
+								projects to assist with highlighting a few programming habits.
+							</em>
 						</div>
 					</div>
 					<div className="content-container">
@@ -38,24 +33,56 @@ export class PortfolioPage extends React.Component {
 							<span>
 								<h4>Professional Experience</h4>
 							</span>
-							My daily routine consists of a fair amount of both front-end and
-							back-end development. As part of the back-end, I regularly code in
-							SQL, PL/SQL, and C#. Many times I've been tasked to help develop
-							and design relational database architectures using both SQL and
-							Oracle. I regularly implement views, functions, and stored
-							procedures, and on occasions, use Entity Framework to generate
-							object-relational mapping. As far as my C# experience, it can be
-							summarized as the reinforcing of business rules through roles,
-							data integrity, CRUD operations, and authentication.
+							Originally starting as a summer intern at ANSYS, I ran and
+							maintained test scripts for their legacy software. All scripts
+							were written in IronPython and ran on a daily basis. All issues I
+							found were elevated to other developers to see whether the script
+							needed to be updated, or an error was introduced into the
+							software.
 							<br />
 							<br />
-							Originally starting out by learning WebForms, I helped the company
-							move towards the MVC architectural pattern for our web
-							applications by developing the first solution under our contract
-							to use the ASP.NET MVC framework. Since then, many of our existing
-							applications have been refactored from WebForms to MVC. To help
-							with user experience, we use a third-party set of .NET controls by
-							DevExpress alongside of jQuery.
+							During my senior year of college, I began my work at KeyLogic.
+							Early in my tenure I taught myself ASP.NET Web Forms and was
+							quickly included on a project to help manage financial data for
+							the Department of Energy’s National Energy Technology Laboratory.
+							I participated in requirements gathering as well as design
+							meetings with the customer. Once comfortable with the back-end
+							workflow, I moved from a majority front-end role to a position
+							where I developed in all parts of the stack. Aside from HTML and
+							CSS, I used Web Form and DevExpress (3rd party library) controls,
+							C#, SQL, and an object-relational mapping tool called
+							EntitySpaces. I was included in helping design and construct the
+							database by using SQL to write and modify tables, stored
+							procedures, functions, and views. My C# experience can be
+							summarized by the reinforcing of business rules through user
+							roles, data integrity, CRUD operations, and authentication.
+							<br />
+							<br />
+							After establishing my work ethic and abilities within the company,
+							I was put on my first solo project. The project was to design and
+							implement a curriculum management system for National Aeronautics
+							and Space Administration’s SMA Technical Excellence Program. This
+							application was completed quickly and on a small budget.
+							<br />
+							<br />
+							Shortly after finishing my solo project, I convinced the lead
+							developer on the DOE NETL contract to allow me to start our next
+							project using the ASP.NET MVC framework. To provide some value to
+							the company, I took it onto myself to learn as much as I could,
+							occasionally holding demos and mentoring other developers. The new
+							framework resonated well because of its structure and the shift to
+							AJAX. The push for our development to use MVC was well-received
+							and changed the way we developed all new applications going
+							forward. We have since refactored old code to use MVC instead of
+							Web Forms.
+							<br />
+							<br />
+							Most recently, I was the lead developer on a project where I was
+							tasked to replace our old ORM with Entity Framework by
+							implementing it in a new project. During this project I also
+							became very familiar with PL/SQL since it was requested we use an
+							Oracle database. The success of this application has led to other
+							projects on the contract to start using Entity Framework.
 						</div>
 					</div>
 					<div className="content-container">
@@ -63,14 +90,11 @@ export class PortfolioPage extends React.Component {
 							<span>
 								<h4>Personal Applications</h4>
 							</span>
-							My experience and fondness with jQuery led me to dive into the
-							world of JavaScript. Recently, I've been taking a stab at learning
-							React and sharpening my JavaScript skills. The following three
-							applications were created using a combination of Firebase, React,
-							Redux, and Webpack. If you would like to visit a working example
-							of any of the them, simply press the image. I've only been looking
-							into React the past few months, so if you have questions,
-							critisms, or input, please feel free to share. Thanks.
+							My enthusiasm for jQuery led me to further develop my skills with
+							JavaScript. The following three applications highlight my
+							experience with Firebase, React, Redux, and Webpack. If you would
+							like to visit a working example of any of them, simply press the
+							image.
 							<br />
 							<br />
 						</div>
@@ -86,7 +110,7 @@ export class PortfolioPage extends React.Component {
 									<strong>Indecision:</strong>
 								</span>
 								{'  '}
-								A small todo-style list that allows the user to create items or
+								A “to-do” style list that allows the user to create items or
 								remove them. If the user is undecided on what to do, the
 								application has a button, that when pressed, will popup a random
 								item in the list.
@@ -114,9 +138,6 @@ export class PortfolioPage extends React.Component {
 								{'  '}
 								Get your expenses in order. After logging in with a Google
 								account, you have the ability to add, edit, and delete expenses.
-								The landing page displays a list of expenses that can be
-								filtered and sorted on. Clearing the filters allows you to see
-								all expenses.
 								<br />
 								<a
 									className="link"
@@ -142,8 +163,8 @@ export class PortfolioPage extends React.Component {
 									<strong>Planning Poker:</strong>
 								</span>{' '}
 								A staple for many in the agile development lifecycle is planning
-								poker. A game/tool used to help find consensus when estimating
-								stories to help plan upcoming work.
+								poker. This game/tool can be used to help find consensus by
+								estimating stories when planning upcoming work.
 								<br />
 								<a
 									className="link"
