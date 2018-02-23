@@ -1,13 +1,10 @@
 import React from 'react';
 import { Router, Route, Switch } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
-import AboutPage from '../components/AboutPage';
-import BlogPage from '../components/BlogPage';
-import ContactPage from '../components/ContactPage';
+import BlogPost from '../components/BlogPost';
 import HomePage from '../components/HomePage';
 import MainLayout from '../components/MainLayout';
 import NotFoundPage from '../components/NotFoundPage';
-import PortfolioPage from '../components/PortfolioPage';
 
 export const history = createHistory();
 
@@ -35,6 +32,7 @@ const AppRouter = () => (
 		<div>
 			<Switch>
 				<Route path="/" component={withLayout(HomePage)} exact={true} />
+				<Route path="/blog/:name" component={withLayout(BlogPost)} />
 				<Route component={NotFoundPage} />
 			</Switch>
 		</div>
@@ -42,9 +40,9 @@ const AppRouter = () => (
 );
 
 const withLayout = Component => {
-	return () => (
+	return ({ ...props }) => (
 		<MainLayout>
-			<Component />
+			<Component {...props} />
 		</MainLayout>
 	);
 };
