@@ -7,7 +7,14 @@ const funcStr = `<pre><code className="language-markup"> ... </code></pre>
 <pre><code className="language-javascript"> ... </code></pre>
 <pre><code className="language-jsx"> ... </code></pre>`;
 
+const mountFuncStr = `componentDidMount() {
+    Prism.highlightAll();
+}`;
+
 export class SyntaxHighlighting extends React.Component {
+	componentDidMount() {
+		Prism.highlightAll();
+	}
 	render() {
 		return (
 			<div className="blog-post__main">
@@ -83,7 +90,9 @@ export class SyntaxHighlighting extends React.Component {
 						<br />
 						<br />
 						<pre>
-							<code className="language-jsx">import Prism from 'prismjs';</code>
+							<code className="language-javascript">
+								import Prism from 'prismjs';
+							</code>
 						</pre>
 						<br />
 						<hr />
@@ -138,8 +147,6 @@ export class SyntaxHighlighting extends React.Component {
 							</code>
 						</pre>
 						<br />
-						<hr />
-						<br />
 						I was able to also observe this interaction in the ‘Test Drive’
 						portion of their website (which can be accessed via the footer). If
 						you open up the developer tools in your browser and start selecting
@@ -147,6 +154,19 @@ export class SyntaxHighlighting extends React.Component {
 						the bottom of the page importing the language you’ve selected. This
 						only happens if the language selected is not one of their main four.
 						<br />
+						<br />
+						<hr />
+						<br />
+						After some more testing I noticed the syntax highlighting wasn't
+						working when first visiting my blog. To remedy this I used the api
+						to force the highlight when the component mounts.
+						<br />
+						<br />
+						<pre>
+							<code className="language-jsx">{mountFuncStr}</code>
+						</pre>
+						<br />
+						<hr />
 						<br />
 						And that’s it… pretty simple. I can now easily add code snippets
 						with syntax highlighting in my blog.
