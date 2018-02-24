@@ -24,7 +24,7 @@ export class HomePage extends React.Component {
 			document.getElementById('portfolio').offsetTop -
 				window.innerHeight / 2 +
 				20 <=
-			document.documentElement.scrollTop
+			(document.documentElement.scrollTop || document.body.scrollTop)
 		) {
 			this.setState({ showPortoflio: true });
 			window.removeEventListener('scroll', this.handleScroll);

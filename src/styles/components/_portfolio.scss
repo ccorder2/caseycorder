@@ -38,6 +38,7 @@
 		min-height: 10em;
 		min-width: 10em;
 		transition: all 0.2s linear;
+		-webkit-transition: all 0.2s linear;
 		&:hover {
 			box-shadow: none;
 		}

@@ -18,7 +18,7 @@ export const hashLinkScroll = () => {
 		}, 200);
 	} else {
 		setTimeout(() => {
-			document.documentElement.scrollTo(0, 0);
+			window.scrollTo(0, 0);
 		}, 200);
 	}
 };
