@@ -6,13 +6,20 @@
 }
 
 .footer__content {
-	align-content: center;
+	align-items: center;
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: unset;
+	width: 100%;
+	@media (min-width: $tablet-breakpoint) {
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
 
 .footer__email {
 	display: flex;
+	width: auto;
 	& > a {
 		align-self: center;
 		color: $off-black;
