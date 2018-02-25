@@ -1,14 +1,17 @@
 .blog {
-	background-color: #333333;
+	background-color: $off-black;
 	flex-grow: 1;
 }
 
 .blog__content {
+	align-items: flex-start;
 	color: $off-white;
+	display: flex;
+	flex-direction: column;
 	height: 100%;
 	font-size: 1.5em;
 	font-weight: 300;
-	padding: 7em 0em;
+	padding: 3em 0em;
 }
 
 .blog__item-title {
@@ -18,11 +21,25 @@
 .blog__title {
 	color: $off-white;
 	font-size: 1.8em;
-	font-weight: 400;
+	font-weight: 300;
+}
+
+.blog__title-container {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding-top: 3em;
+	width: 100%;
+}
+
+.blog__title-underline {
+	width: 4em;
+	height: 3px;
+	background-color: $off-white;
 }
 
 .blog-post {
-	background-color: #333333;
+	background-color: $off-black;
 }
 
 .blog-post__content {

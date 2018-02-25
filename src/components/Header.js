@@ -16,16 +16,18 @@ export class Header extends React.Component {
 
 	render() {
 		return (
-			<header className="header">
-				<div className="content-container">
-					<div className="header__content">
-						<NavLink to="/" className="header__logo">
-							<div>
-								C<span>ASEY</span> C<span>ORDER</span>
-							</div>
-						</NavLink>
-						<NavButton open={this.state.open} onClick={this.onClick} />
-						<Navigation show={this.state.open} onClick={this.onClick} />
+			<header>
+				<div className="header">
+					<div className="content-container">
+						<div className="header__content">
+							<NavLink to="/" className="header__logo">
+								<div>
+									C<span>ASEY</span> C<span>ORDER</span>
+								</div>
+							</NavLink>
+							<NavButton open={this.state.open} onClick={this.onClick} />
+							<Navigation show={this.state.open} onClick={this.onClick} />
+						</div>
 					</div>
 				</div>
 			</header>

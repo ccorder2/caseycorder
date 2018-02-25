@@ -1,27 +1,13 @@
 import React from 'react';
 import { Router, Route, Switch } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
+import { hashLinkScroll } from '../helpers/scroll';
 import BlogPost from '../components/BlogPost';
 import HomePage from '../components/HomePage';
 import MainLayout from '../components/MainLayout';
 import NotFoundPage from '../components/NotFoundPage';
 
 export const history = createHistory();
-
-export const hashLinkScroll = () => {
-	const { hash } = window.location;
-	if (hash !== '') {
-		setTimeout(() => {
-			const id = hash.replace('#', '');
-			const element = document.getElementById(id);
-			if (element) element.scrollIntoView();
-		}, 200);
-	} else {
-		setTimeout(() => {
-			window.scrollTo(0, 0);
-		}, 200);
-	}
-};
 
 history.listen(location => {
 	hashLinkScroll();

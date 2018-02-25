@@ -1,21 +1,21 @@
 .about {
-	background-color: #333333;
+	background-color: $off-white;
 	flex-grow: 1;
 }
 
 .about__greeting-content {
 	align-items: center;
-	color: $off-white;
+	color: $off-black;
 	display: flex;
 	flex-direction: column-reverse;
 	flex-grow: 1;
-	font-size: 1.2em;
-	font-weight: 300;
+	font-size: 1em;
+	font-weight: 400;
 	height: 100%;
 	padding: 2em 0em;
 	@media (min-width: $tablet-breakpoint) {
 		flex-direction: row;
-		font-size: 1.4em;
+		font-size: 1.2em;
 		padding: 3em 0em;
 	}
 }
@@ -25,7 +25,6 @@
 	background-position-x: -3.5em;
 	background-size: cover;
 	border-radius: 50%;
-	box-shadow: 0.2em 0.4em 0.8em rgba(0, 0, 0, 0.5);
 	margin: 0em 0em 1.5em 0em;
 	max-height: 10em;
 	max-width: 10em;
@@ -44,7 +43,21 @@
 	}
 }
 .about__title {
-	color: $off-white;
+	color: $off-black;
 	font-size: 1.8em;
-	font-weight: 400;
+	font-weight: 300;
+}
+
+.about__title-container {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding-top: 3em;
+	width: 100%;
+}
+
+.about__title-underline {
+	width: 4em;
+	height: 3px;
+	background-color: $dark-grey;
 }

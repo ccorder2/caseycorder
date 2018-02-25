@@ -1,8 +1,11 @@
+header {
+	z-index: 999;
+}
+
 .header {
 	background: #111111;
 	flex-grow: 0;
 	margin-bottom: 0em;
-	z-index: 999;
 	@media (min-width: $tablet-breakpoint) {
 		background: transparent;
 		margin-bottom: -5.15em;

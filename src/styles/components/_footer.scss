@@ -15,13 +15,13 @@
 	display: flex;
 	& > a {
 		align-self: center;
-		color: #080808;
-		font-weight: 300;
+		color: $off-black;
+		font-weight: 400;
 	}
 	& > span {
 		align-self: center;
-		color: #080808;
-		font-weight: 100;
+		color: $off-black;
+		font-weight: 300;
 	}
 }
 
