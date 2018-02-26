@@ -22,16 +22,16 @@ export class HomePage extends React.Component {
 		window.removeEventListener('scroll', this.handleScroll);
 	}
 	handleScroll = () => {
-		if (isInView('aboutTitle', -50)) {
+		if (isInView('aboutTitle', 0)) {
 			this.setState(() => ({ showAboutTitle: true }));
 		}
-		if (isInView('blogTitle', -50)) {
+		if (isInView('blogTitle', 0)) {
 			this.setState(() => ({ showBlogTitle: true }));
 		}
-		if (isInView('portfolioBlurb', 200)) {
+		if (isInView('portfolioBlurb', 250)) {
 			this.setState(() => ({ showPortBlurb: true }));
 		}
-		if (isInView('portfolioTitle', -50)) {
+		if (isInView('portfolioTitle', 0)) {
 			this.setState(() => ({ showPortTitle: true }));
 		}
 	};
