@@ -28,20 +28,30 @@ header {
 	& > div {
 		border-radius: 0.25em;
 		font-size: 1.2em;
-		font-weight: 400;
-		letter-spacing: -0.05em;
+		font-weight: 300;
 		padding: 0em 0.3em 0em 0.25em;
 		-webkit-user-select: none;
 		user-select: none;
-		& span {
-			font-size: 0.8em;
-		}
 		@media (min-width: $tablet-breakpoint) {
 			font-size: 1.8em;
 		}
 		@media (min-width: $desktop-breakpoint) {
 			font-size: 2.4em;
 		}
+	}
+}
+
+.header__logo-content {
+	align-items: flex-end;
+	display: flex;
+	flex-direction: column;
+	& > div {
+		line-height: 1em;
+	}
+	& > div:nth-child(2) {
+		color: $gold;
+		font-size: 0.5em;
+		font-weight: 100;
 	}
 }
 

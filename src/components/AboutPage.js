@@ -43,12 +43,12 @@ export class AboutPage extends React.Component {
 							<br />
 							<br />
 							<strong>Resume:</strong>{' '}
-							<a className="link" href="/content/SDE_Resume.docx" target="_blank">
-								word
+							<a className="link" href="/content/CaseyCorder_SDE_Resume.pdf" target="_blank">
+								pdf
 							</a>{' '}
 							|{' '}
-							<a className="link" href="/content/SDE_Resume.pdf" target="_blank">
-								pdf
+							<a className="link" href="/content/CaseyCorder_SDE_Resume.docx" target="_blank">
+								word
 							</a>
 						</div>
 						<div className="about__greeting-img" />

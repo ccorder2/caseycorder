@@ -40,7 +40,7 @@ export class HomePage extends React.Component {
 			<div>
 				<div className="home__blurb">
 					<Fade key="blurb-title" in appear={true} timeout={0}>
-						<div>Software Developer</div>
+						<div>Full stack Microsoft developer</div>
 					</Fade>
 					<Fade key="blurb-text" in appear={true} timeout={500}>
 						<div>Coding one line at a time...</div>

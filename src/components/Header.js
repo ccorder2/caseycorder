@@ -21,8 +21,9 @@ export class Header extends React.Component {
 					<div className="content-container">
 						<div className="header__content">
 							<NavLink to="/" className="header__logo">
-								<div>
-									C<span>ASEY</span> C<span>ORDER</span>
+								<div className="header__logo-content">
+									<div>Casey Corder</div>
+									<div>Software Developer</div>
 								</div>
 							</NavLink>
 							<NavButton open={this.state.open} onClick={this.onClick} />
