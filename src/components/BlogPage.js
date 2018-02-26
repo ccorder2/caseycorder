@@ -34,8 +34,12 @@ export class BlogPage extends React.Component {
 								<Link to="blog/highlight_js_with_react" className="link">
 									Syntax Highlighting in React with Prism
 								</Link>
+								<br />
+								<div>
+									<em>February 22nd, 2018</em>
+								</div>
 							</div>
-							<div>
+							<div className="blog__item-content">
 								Add syntax highlighting to HTML code elements inside of React applications. Select
 								from a few different css themes to highlight many of the most common programming
 								languages.

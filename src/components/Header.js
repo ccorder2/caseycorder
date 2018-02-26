@@ -11,7 +11,7 @@ export class Header extends React.Component {
 		};
 	}
 	onClick = () => {
-		this.setState({ open: !this.state.open });
+		this.setState(prevState => ({ open: !prevState.open }));
 	};
 
 	render() {

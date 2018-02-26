@@ -20,3 +20,8 @@ export const isInView = (elemId, offset) => {
 
 	return elemBottom <= viewBottom && elemTop >= viewTop;
 };
+
+export const getElementHeight = elemId => {
+	const elem = document.getElementById(elemId);
+	return elem.offsetHeight;
+};
