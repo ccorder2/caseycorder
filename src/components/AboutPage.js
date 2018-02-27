@@ -7,20 +7,16 @@ export class AboutPage extends React.Component {
 		return (
 			<div className="about">
 				<div className="content-container">
+					<div className="about__greeting-img-container">
+						<div className="about__greeting-img" />
+					</div>
 					<div id="aboutTitle" className="about__title-container">
-						<SlideLeft
-							key="about__title"
-							in={this.props.showTitle}
-							appear={true}
-							timeout={0}
-							slideLength={800}
-						>
+						<SlideLeft key="about__title" in={this.props.showTitle} timeout={0} slideLength={800}>
 							<div className="about__title">ABOUT</div>
 						</SlideLeft>
 						<SlideRight
 							key="about__title-underline"
 							in={this.props.showTitle}
-							appear={true}
 							timeout={0}
 							slideLength={800}
 						>
@@ -51,7 +47,6 @@ export class AboutPage extends React.Component {
 								word
 							</a>
 						</div>
-						<div className="about__greeting-img" />
 					</div>
 				</div>
 			</div>

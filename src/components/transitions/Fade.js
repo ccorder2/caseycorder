@@ -4,7 +4,7 @@ import Transition from 'react-transition-group/Transition';
 const duration = 750;
 
 const defaultStyle = {
-	transition: `opacity ${duration}ms ease-in`,
+	transition: `opacity ${duration}ms linear`,
 	opacity: 0
 };
 

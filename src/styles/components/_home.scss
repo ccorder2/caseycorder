@@ -6,31 +6,11 @@
 	color: $off-white;
 	display: flex;
 	flex-direction: column;
-	height: 90vh;
+	justify-content: flex-end;
+	height: 25vh;
 	padding: 4em 0;
 	width: 100%;
-	& > div {
-		&:nth-child(1) {
-			font-size: 2em;
-			font-weight: 100;
-			margin-top: 1em;
-			text-align: center;
-			@media (min-width: $tablet-breakpoint) {
-				font-size: 3em;
-				margin-top: 2em;
-			}
-		}
-		&:nth-child(2) {
-			font-size: 2em;
-			font-weight: 100;
-			margin-bottom: 1em;
-			margin-top: auto;
-			@media (min-width: $tablet-breakpoint) {
-				font-size: 3em;
-			}
-		}
-	}
 	@media (min-width: $tablet-breakpoint) {
-		height: 100vh;
+		height: 50vh;
 	}
 }
