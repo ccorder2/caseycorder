@@ -47,7 +47,7 @@ export class PortfolioPage extends React.Component {
 								appear={true}
 								timeout={1500}
 							>
-								<div>full stack developer | font end enthusiast</div>
+								<div>full stack developer | front end enthusiast</div>
 							</Fade>
 						</div>
 					</div>
