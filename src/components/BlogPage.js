@@ -7,27 +7,33 @@ export class BlogPage extends React.Component {
 	render() {
 		return (
 			<div className="blog">
-				<div className="content-container">
-					<div id="blogTitle" className="blog__title-container">
-						<SlideLeft
-							key="blog__title"
-							in={this.props.showTitle}
-							appear={true}
-							timeout={0}
-							slideLength={800}
-						>
-							<div className="blog__title">BLOG</div>
-						</SlideLeft>
-						<SlideRight
-							key="blog__title-underline"
-							in={this.props.showTitle}
-							appear={true}
-							timeout={0}
-							slideLength={800}
-						>
-							<div className="blog__title-underline" />
-						</SlideRight>
+				<div className="blog__img">
+					<div className="blog__img-filter">
+						<div className="content-container">
+							<div id="blogTitle" className="blog__title-container">
+								<SlideLeft
+									key="blog__title"
+									in={this.props.showTitle}
+									appear={true}
+									timeout={0}
+									slideLength={800}
+								>
+									<div className="blog__title">BLOG</div>
+								</SlideLeft>
+								<SlideRight
+									key="blog__title-underline"
+									in={this.props.showTitle}
+									appear={true}
+									timeout={0}
+									slideLength={800}
+								>
+									<div className="blog__title-underline" />
+								</SlideRight>
+							</div>
+						</div>
 					</div>
+				</div>
+				<div className="content-container">
 					<div className="blog__content">
 						<div className="blog__item">
 							<div className="blog__item-title">

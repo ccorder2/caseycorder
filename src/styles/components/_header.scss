@@ -48,11 +48,6 @@ header {
 	& > div {
 		line-height: 1em;
 	}
-	& > div:nth-child(2) {
-		color: $gold;
-		font-size: 0.5em;
-		font-weight: 100;
-	}
 }
 
 .header__nav {

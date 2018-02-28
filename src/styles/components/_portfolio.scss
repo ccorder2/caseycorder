@@ -10,20 +10,31 @@
 	background-position: center;
 	color: $off-white;
 	display: flex;
-	flex-direction: row;
-	height: 90vh;
+	flex-direction: column;
+	height: 70vh;
 	justify-content: center;
 	padding: 4em 0;
 	width: 100%;
-	& > div {
-		font-size: 2.4em;
-		font-weight: 100;
-		@media (min-width: $tablet-breakpoint) {
-			font-size: 3em;
-		}
-	}
 	@media (min-width: $tablet-breakpoint) {
-		height: 100vh;
+		height: 85vh;
+	}
+}
+
+.portfolio__blurb-title {
+	display: flex;
+	flex-direction: row;
+	font-size: 2.4em;
+	font-weight: 100;
+	@media (min-width: $tablet-breakpoint) {
+		font-size: 3em;
+	}
+}
+
+.portfolio__blurb-subtitle {
+	font-size: 1em;
+	font-weight: 100;
+	@media (min-width: $tablet-breakpoint) {
+		font-size: 1.4em;
 	}
 }
 
@@ -78,6 +89,7 @@
 .portfolio__item-col {
 	@extend .portfolio__item;
 	align-items: flex-start;
+	padding-bottom: 3em;
 	@media (min-width: $tablet-breakpoint) {
 		flex-direction: column;
 	}

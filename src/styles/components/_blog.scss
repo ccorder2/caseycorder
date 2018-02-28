@@ -1,5 +1,5 @@
 .blog {
-	background-color: $off-black;
+	background: $off-black;
 	flex-grow: 1;
 }
 
@@ -12,6 +12,28 @@
 	font-size: 1.5em;
 	font-weight: 300;
 	padding: 3em 0em;
+}
+
+.blog__img {
+	background: url('/images/sunrise_dark_banner.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.blog__img-filter {
+	background: -webkit-linear-gradient(
+		rgba(12, 19, 31, 1) 0%,
+		rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0),
+		rgba(16, 16, 16, 0.5),
+		rgba(16, 16, 16, 1)
+	);
+	background: linear-gradient(
+		rgba(12, 19, 31, 1) 0%,
+		rgba(0, 0, 0, 0) 60%,
+		rgba(16, 16, 16, 0.5),
+		rgba(16, 16, 16, 1)
+	);
 }
 
 .blog__item-content {
@@ -41,7 +63,7 @@
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	padding-top: 3em;
+	padding: 3em 0em 23em 0em;
 	width: 100%;
 }
 

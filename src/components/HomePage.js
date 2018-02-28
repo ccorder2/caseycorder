@@ -17,6 +17,7 @@ export class HomePage extends React.Component {
 	}
 	componentDidMount() {
 		window.addEventListener('scroll', this.handleScroll);
+		this.handleScroll();
 	}
 	componentWillUnmount() {
 		window.removeEventListener('scroll', this.handleScroll);
@@ -38,17 +39,6 @@ export class HomePage extends React.Component {
 	render() {
 		return (
 			<div>
-				<div className="home__blurb">
-					<Fade key="blurb-title" in appear={true} timeout={0}>
-						<div>Full stack Microsoft developer</div>
-					</Fade>
-					<Fade key="blurb-text" in appear={true} timeout={500}>
-						<div>Coding one line at a time...</div>
-					</Fade>
-				</div>
-				<div id="about">
-					<AboutPage showTitle={this.state.showAboutTitle} />
-				</div>
 				<div id="portfolio">
 					<PortfolioPage
 						showBlurb={this.state.showPortBlurb}
@@ -57,6 +47,9 @@ export class HomePage extends React.Component {
 				</div>
 				<div id="blog">
 					<BlogPage showTitle={this.state.showBlogTitle} />
+				</div>
+				<div id="about">
+					<AboutPage showTitle={this.state.showAboutTitle} />
 				</div>
 			</div>
 		);
