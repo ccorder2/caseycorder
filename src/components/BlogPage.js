@@ -51,6 +51,23 @@ export class BlogPage extends React.Component {
 								languages.
 							</div>
 						</div>
+						<br />
+						<div className="blog__item">
+							<div className="blog__item-title">
+								<Link to="blog/pixijs_bouncing_ball" className="link">
+									Getting Started with PixiJS v4
+								</Link>
+								<br />
+								<div>
+									<em>March 3rd, 2018</em>
+								</div>
+							</div>
+							<div className="blog__item-content">
+								My Hello World for PixiJS. This is a rundown of my first attempt at creating a small
+								PixiJS program. In this example, I create a ball that bounces back and forth across
+								the screen.
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
