@@ -78,8 +78,7 @@ export class PortfolioPage extends React.Component {
 								Below are four separate sections. The first three are a list of personal projects to
 								assist with highlighting a few programming habits, and the last, an outline of my
 								professional work experience. The three applications demonstrate my experience with
-								Firebase, React, Redux, and Webpack. If you would like to visit a working example,
-								select the image.
+								Firebase, React, Redux, and Webpack.
 							</em>
 						</div>
 					</div>
@@ -87,12 +86,10 @@ export class PortfolioPage extends React.Component {
 						<div className="portfolio__item">
 							<a href="http://apps.indecision.caseycorder.com" target="_blank">
 								<img src="/images/indecision.jpg" alt="indecision" />
+								<div className="portfolio__item-img" />
+								<span>Indecision</span>
 							</a>
 							<div className="portfolio__item-content">
-								<span>
-									<strong>Indecision:</strong>
-								</span>
-								{'  '}
 								A “to-do” style list that allows the user to create items or remove them. If the
 								user is undecided on what to do, the application has a button, that when pressed,
 								will popup a random item in the list.
@@ -112,12 +109,10 @@ export class PortfolioPage extends React.Component {
 						<div className="portfolio__item">
 							<a href="http://apps.expensify.caseycorder.com" target="_blank">
 								<img src="/images/expensify.jpg" alt="expensify" />
+								<div className="portfolio__item-img" />
+								<span>Expensify</span>
 							</a>
 							<div className="portfolio__item-content">
-								<span>
-									<strong>Expensify:</strong>
-								</span>
-								{'  '}
 								Get your expenses in order. After logging in with a Google account, you have the
 								ability to add, edit, and delete expenses.
 								<br />
@@ -136,11 +131,10 @@ export class PortfolioPage extends React.Component {
 						<div className="portfolio__item">
 							<a href="http://apps.planningpoker.caseycorder.com" target="_blank">
 								<img src="/images/planningpoker.jpg" alt="planningpoker" />
+								<div className="portfolio__item-img" />
+								<span>Planning Poker</span>
 							</a>
 							<div className="portfolio__item-content">
-								<span>
-									<strong>Planning Poker:</strong>
-								</span>{' '}
 								A staple for many in the agile development lifecycle is planning poker. This
 								game/tool can be used to help find consensus by estimating stories when planning
 								upcoming work.
@@ -164,11 +158,11 @@ export class PortfolioPage extends React.Component {
 								</a>
 								<div className="portfolio__item-blurb-content">
 									<span>
-										<strong>KeyLogic:</strong> This is the company where I first started as a full
-										time software developer. KeyLogic is a highly successfuly provider of IT
-										solutions and management consulting. They specialize in solutions that enable
-										customers to make better decisions for their organization. Expand this section
-										to read more about my professional experience at KeyLogic.
+										<strong>Professional Experience:</strong> KeyLogic is the company where I first
+										started as a full time software developer. KeyLogic is a highly successfuly
+										provider of IT solutions and management consulting. They specialize in solutions
+										that enable customers to make better decisions for their organization. Expand
+										this section to read more about my professional experience at KeyLogic.
 									</span>
 									{'  '}
 								</div>
